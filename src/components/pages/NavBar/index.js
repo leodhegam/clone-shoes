@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
  import { Container } from './styles';
+ import { connect} from 'react-redux';
  import logo from '../imgs/logo.png'
  import {MdShoppingCart,MdPermIdentity,MdFavorite} from "react-icons/md"
-export default function NavBar() {
+function NavBar({cartSize}) {
   return (
     <Container>
    <h4 className="text-center">CLONESHOES</h4>
@@ -24,7 +25,7 @@ export default function NavBar() {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Masculino</a>
+          <Link to="/masculino"className="text-light p-2"> Masculino</Link>
           </li>
           <li class="nav-item">
           <Link to="/feminino"className="text-light p-2"> Feminino</Link>
@@ -36,7 +37,7 @@ export default function NavBar() {
       </div>
       <Link to="/card" className="text-light p-2">
       <MdShoppingCart/>
-      <span className="p-2">3 itens</span>
+      <span className="p-2">{cartSize} itens</span>
       </Link>  
      <Link className="text-light p-1">
      <MdPermIdentity/>
@@ -50,3 +51,6 @@ export default function NavBar() {
     </Container>
   );
 }
+export default connect(state => ({
+  cartSize: state.cart.length,
+  }))(NavBar);

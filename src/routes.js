@@ -3,7 +3,7 @@ import {Switch,Route} from 'react-router-dom';
 import Masculino from './components/pages/Masculino';
 import Home from './components/pages/Home'
 import Feminino from './components/pages/Feminino';
-import Card from './components/pages/Card';
+import Card from './components/pages/Cart';
 import Contato from './components/pages/Contato';
 
 export default function Routes (){
