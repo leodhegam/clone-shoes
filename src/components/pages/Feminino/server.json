@@ -1,0 +1,87 @@
+{
+    "stock": [
+      {
+        "id": 1,
+        "amount": 3
+      },
+      {
+        "id": 2,
+        "amount": 5
+      },
+      {
+        "id": 3,
+        "amount": 2
+      },
+      {
+        "id": 4,
+        "amount": 1
+      },
+      {
+        "id": 5,
+        "amount": 5
+      },
+      {
+        "id": 6,
+        "amount": 10
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "title": "Bolsa Puma Core Base Shopper - Preto",
+        "price": 74.9,
+        "image": "https://static.netshoes.com.br/produtos/bolsa-puma-core-base-shopper/06/D14-8269-006/D14-8269-006_detalhe1.jpg?ims=326x"
+      },
+      {
+        "id": 2,
+        "title": "Top Kappa Marjorie",
+        "price": 34.9,
+        "image": "https://static.netshoes.com.br/produtos/top-kappa-marjorie/06/D65-2450-006/D65-2450-006_detalhe2.jpg?ims=326x"
+      },
+      {
+        "id": 3,
+        "title": "Camisa Flamengo III 19/20 s/nº",
+        "price": 249.9,
+        "image": "https://static.netshoes.com.br/produtos/camisa-flamengo-iii-1920-sn-torcedor-adidas-feminina/78/COL-7448-178/COL-7448-178_zoom1.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Camiseta Puma Active Feminina - Branco",
+        "price": 69.9,
+        "image": "https://static.netshoes.com.br/produtos/camiseta-puma-active-feminina/14/D14-5692-014/D14-5692-014_zoom1.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Camiseta Puma Elevated Cropped Feminina",
+        "price": 219.9,
+        "image": "https://static.netshoes.com.br/produtos/camiseta-puma-elevated-ess-aop-cropped-feminina/06/D14-8407-006/D14-8407-006_zoom1.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Jaqueta Mizuno Run Fast Feminina",
+        "price": 199.8,
+        "image": "https://static.netshoes.com.br/produtos/jaqueta-mizuno-run-fast-feminina/26/D16-1073-026/D16-1073-026_detalhe2.jpg?ims=326x"
+      },
+      {
+        "id":7,
+        "title":"Camiseta Nike Dry Leg Rebel Feminina",
+        "price": 73.9,
+        "image": "https://static.netshoes.com.br/produtos/camiseta-nike-dry-leg-rebel-crew-feminina/26/HZM-2043-026/HZM-2043-026_detalhe2.jpg?ims=326x"
+      },
+      {
+        "id":8,
+        "title":"Calça Jogger Gonew Feminina",
+        "price": 44.9,
+        "image":"https://static.netshoes.com.br/produtos/calca-jogger-gonew-feminina/34/C62-2479-034/C62-2479-034_zoom1.jpg"
+      },
+      {
+        "id":9,
+        "title":"Camiseta Olympikus NS Feminina",
+        "price": 39.9,
+        "image":"https://static.netshoes.com.br/produtos/camiseta-olympikus-ns-feminina/06/D22-3276-006/D22-3276-006_zoom1.jpg"
+      }
+  
+  
+    ]
+  }
+  

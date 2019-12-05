@@ -10,10 +10,10 @@ export default function Routes (){
     return (
         <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/masculino" exact component={Masculino}/>
-            <Route path="/feminino" exact component={Feminino}/>
-            <Route path="/card" exact component={Card}/>
-            <Route path="/contato" exact component={Contato}/>
+            <Route path="/masculino" component={Masculino}/>
+            <Route path="/feminino"component={Feminino}/>
+            <Route path="/card" component={Card}/>
+            <Route path="/contato"component={Contato}/>
         </Switch>
     )
 }

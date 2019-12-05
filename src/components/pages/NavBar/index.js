@@ -27,10 +27,10 @@ export default function NavBar() {
             <a class="nav-link" href="#">Masculino</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Feminino</a>
+          <Link to="/feminino"className="text-light p-2"> Feminino</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
+            <Link to="/contato"className="text-light p-2"> Contato</Link>
           </li>
         </ul>
       </div>
