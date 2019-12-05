@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build && json-server server.json -p 3333"
+  command = "npm run build"
+  command = "json-server server.json -p 3333"
   publish="/build"
   base = "/"
 [[redirects]]
