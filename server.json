@@ -1,0 +1,86 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "amount": 5
+    },
+    {
+      "id": 6,
+      "amount": 10
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Tênis de Caminhada Leve Confortável",
+      "price": 179.9,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Chuteira Futsal Nike Phantom Vision Academy DF IC",
+      "price": 529.9,
+      "image": "https://static.netshoes.com.br/produtos/chuteira-futsal-nike-phantom-vision-academy-df-ic/28/HZM-0008-128/HZM-0008-128_zoom1.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Tênis Adidas Duramo Lite 2.0",
+      "price": 219.9,
+      "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis3.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Bola Futebol Campo Adidas Telstar 18 Top Glider Copa do Mundo FIFA - Branco",
+      "price": 94.9,
+      "image": "https://static.netshoes.com.br/produtos/bola-futebol-campo-adidas-telstar-18-top-glider-copa-do-mundo-fifa/14/COL-1873-014/COL-1873-014_zoom1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Camiseta Puma Elevated ESS AOP Cropped Feminina - Preto",
+      "price": 219.9,
+      "image": "https://static.netshoes.com.br/produtos/camiseta-puma-elevated-ess-aop-cropped-feminina/06/D14-8407-006/D14-8407-006_zoom1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Tênis Nike Shox Nz Eu Masculino - Preto",
+      "price": 179.9,
+      "image": "https://static.netshoes.com.br/produtos/tenis-nike-shox-nz-eu-masculino/14/D12-9970-014/D12-9970-014_zoom1.jpg"
+    },
+    {
+      "id":7,
+      "title":"Camisa Juventus 19/20",
+      "price": 149.9,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIBG0W2YXFA4ne7sr-HB5Id6I80Eb0wAR9pu7ewE8a3QKCjtH4"
+    },
+    {
+      "id":8,
+      "title":"Camisa Flamengo Torcedor 19/20",
+      "price": 249.9,
+      "image":"https://static.netshoes.com.br/produtos/camisa-flamengo-i-1920-sn-torcedor-c-patrocinio-adidas-masculina/68/COL-7378-068/COL-7378-068_zoom1.jpg"
+    },
+    {
+      "id":9,
+      "title":"Mochila de Assalto Militar Tática 30 Litros - Caramelo",
+      "price": 119.9,
+      "image":"https://static.netshoes.com.br/produtos/mochila-de-assalto-militar-tatica-30-litros/19/ISQ-0090-219/ISQ-0090-219_zoom1.jpg"
+    }
+
+
+  ]
+}
