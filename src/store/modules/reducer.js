@@ -13,7 +13,28 @@ export default function cart(state=[],action){
                 });
             }
           
-        })
+        });
+        case 'REMOVE_CART' : 
+        return produce(state,draft => {
+            const Index = draft.findIndex(p => p.id === action.id);
+            if(Index >= 0){
+                draft.splice(Index,1);
+
+            }
+        });
+        case 'UPDATE_AMOUNT' : {
+            if(action.amount <=0){
+                return state;
+            }
+            return produce(state,draft => {
+                const Index = draft.findIndex(p => p.id === action.id);
+                if(Index >= 0){
+                    draft[Index].amount = Number(action.amount);
+                }
+                });
+            }
+        
+               
         default:
             return state;
         }
