@@ -1,5 +1,5 @@
-{
-  "products": [
+[
+  
   {
     "id": 1,
     "title": "Tênis de Caminhada Leve Confortável",
@@ -54,7 +54,4 @@
     "price": 119.9,
     "image":"https://static.netshoes.com.br/produtos/mochila-de-assalto-militar-tatica-30-litros/19/ISQ-0090-219/ISQ-0090-219_zoom1.jpg"
   }
-
-
 ]
-}

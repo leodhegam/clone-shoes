@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {ProductList} from './styles'
 import { connect }  from 'react-redux';
+import Body from '../../../server.json'
 import api from '../../../services/api';
 import {formatPrice} from '../../../util/format'
 import  * as CartActions from '../../../store/modules/cart/actions'
 import {bindActionCreators} from 'redux';
 import {MdShoppingCart} from 'react-icons/md'
-import style from './styles'
  class Home extends Component  {
   state = {
     products:[],
@@ -28,7 +28,7 @@ handleAdd = product => {
 
     return (
       <ProductList>
-        {products.map(product =>(
+        {Body.map(product =>(
               <li className="border m-2"key={product.id}>
       <img src={product.image} alt={product.title} />
       <strong>{product.title}</strong>
