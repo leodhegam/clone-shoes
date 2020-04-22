@@ -7,13 +7,14 @@ import {formatPrice} from '../../../util/format'
 import  * as CartActions from '../../../store/modules/cart/actions'
 import {bindActionCreators} from 'redux';
 import {MdShoppingCart} from 'react-icons/md'
+
  class Home extends Component  {
   state = {
     products:[],
   };
   async componentDidMount(){
     const response = await api.get('products');
-    this.setState({products:response.data});
+    this.setState({products:response.data}); 
     const data = response.data.map(product=>({
       ...product, priceFormatted : formatPrice(product.price),
     }));
@@ -29,15 +30,16 @@ handleAdd = product => {
     return (
       <ProductList>
         {Body.map(product =>(
-              <li className="border m-2"key={product.id}>
+              <li key={product.id}>
       <img src={product.image} alt={product.title} />
       <strong>{product.title}</strong>
-      <span className="p-2 m-1">{formatPrice(product.price)}</span>
-      <button type="button" class="btn btn-outline-success p-2 " onClick={ () => this.handleAdd(product)}>ADICIONAR AO CARRINHO
+      <span>{formatPrice(product.price)}</span>
+      <button size={16} color="#FFF" type="button" onClick={ () => this.handleAdd(product)}>
         <div>
           <MdShoppingCart size={16}/>
           {amount[product.id] || 0}
           </div>
+          <span>ADICIONAR AO CARRINHO</span>
       </button>
         
          
