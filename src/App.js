@@ -4,14 +4,14 @@ import { Provider } from 'react-redux';
 import Routes from './routes';
 import './config/reactotron';
 import GlobalStyle from './styles/global';
-import Navbar from './components/pages/NavBar';
+import Header from './components/pages/Header';
 import store from './store';
 
 export default function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Navbar />
+        <Header />
         <Routes />
         <GlobalStyle />
       </BrowserRouter>

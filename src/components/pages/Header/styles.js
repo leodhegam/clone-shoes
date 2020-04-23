@@ -6,7 +6,17 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
-
+  a {
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  h4 {
+    color: #fff;
+  }
   img {
     height: 34px;
     width: 34px;

@@ -61,9 +61,11 @@ function Cart({ cart, removeCart, update, total }) {
                 <td>
                   <span>{product.subtotal}</span>
                 </td>
-                <button type="button" onClick={() => removeCart(product.id)}>
-                  <MdDelete size={20} color="#FFF" />
-                </button>
+                <td>
+                  <button type="button" onClick={() => removeCart(product.id)}>
+                    <MdDelete size={20} color="#B9554E" />
+                  </button>
+                </td>
               </tr>
             );
           })}

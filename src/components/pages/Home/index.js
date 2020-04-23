@@ -1,35 +1,31 @@
 import React, {Component} from 'react';
-import {ProductList} from './styles'
 import { connect }  from 'react-redux';
-import Body from '../../../server.json'
-import api from '../../../services/api';
+import products from '../../../server.json'
 import {formatPrice} from '../../../util/format'
 import  * as CartActions from '../../../store/modules/cart/actions'
 import {bindActionCreators} from 'redux';
 import {MdShoppingCart} from 'react-icons/md'
 
- class Home extends Component  {
+import {ProductList} from './styles'
+
+class Home extends Component  {
   state = {
     products:[],
   };
-  async componentDidMount(){
-    const response = await api.get('products');
-    this.setState({products:response.data}); 
-    const data = response.data.map(product=>({
-      ...product, priceFormatted : formatPrice(product.price),
-    }));
-  }
+ 
 handleAdd = product => {
+ 
   const { addCart } = this.props;
   addCart(product);
 };
   render() {
+  
     const {amount}= this.props;
-    const { products } = this.state;
+  
 
     return (
       <ProductList>
-        {Body.map(product =>(
+        {products.map(product =>(
               <li key={product.id}>
       <img src={product.image} alt={product.title} />
       <strong>{product.title}</strong>

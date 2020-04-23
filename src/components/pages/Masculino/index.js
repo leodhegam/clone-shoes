@@ -1,20 +1,14 @@
 import React, {Component} from 'react';
 import {ProductList} from '../Home/styles'
 import { connect }  from 'react-redux';
-import api from '../../../services/api';
+
 import {formatPrice} from '../../../util/format'
 import {MdShoppingCart} from 'react-icons/md'
  class Home extends Component  {
   state = {
     products:[],
   };
-  async componentDidMount(){
-    const response = await api.get('products');
-    this.setState({products:response.data});
-    const data = response.data.map(product=>({
-      ...product, priceFormatted : formatPrice(product.price),
-    }));
-  }
+ 
 handleAdd = product => {
   const { dispatch } = this.props;
   dispatch ({

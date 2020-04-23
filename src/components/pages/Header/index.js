@@ -5,10 +5,12 @@ import { MdShoppingCart, MdPermIdentity, MdFavorite } from 'react-icons/md';
 import { Container, Cart } from './styles';
 import logo from '../imgs/logo.png';
 
-function NavBar({ cartSize }) {
+function Header({ cartSize }) {
   return (
     <Container>
-      <h4 className="text-center">CLONESHOES</h4>
+      <Link to="/">
+        <h4>CLONESHOES</h4>
+      </Link>
       <Link to="/">
         <img src={logo} alt="CloneShoes" />
       </Link>
@@ -25,4 +27,4 @@ function NavBar({ cartSize }) {
 }
 export default connect((state) => ({
   cartSize: state.cart.length,
-}))(NavBar);
+}))(Header);
